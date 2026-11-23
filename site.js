@@ -12,7 +12,7 @@ document.getElementById('lang').onclick = () => {
 // Ночной город: призрак летит к окну, на которое нажали, и оно загорается
 const cv = document.getElementById('town'), g = cv.getContext('2d'), P = 4;
 const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
-const img = new Image(); img.src = 'img/icon_fg_432.png';
+const img = new Image(); img.src = 'icon_fg_432.png';
 let W, H, stars, houses, wins, lamps, ghost = null, queue = [], lit = new Set(), seed = 7;
 const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
 function build() {
